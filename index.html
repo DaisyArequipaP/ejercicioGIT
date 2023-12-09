@@ -12,7 +12,7 @@
     <!--Primera sección--> 
     
     <div class="container-bar">
-		<div class="icon-social">
+		<div class="icon-social hide">
 			<div> Follow</div> 
 			<br>
 			<br>
@@ -31,13 +31,13 @@
         <header class="barra_nav_header">
             <nav class="barra_nav_nav">
                 <a href="/">
-                <img src="IMG/Logo.png" alt="Logo de UNIQLUXURY" width="200px">
+                <img src="IMG/Logo.png" alt="Logo de UNIQLUXURY" width="200px" class="hide">
                 </a>
                 <div class="barra_nav_links">
-                <a href="#">LOG IN</a>
-                <a href="#" >SING UP</a>
-                <a href="#">ESP</a>
-                <a href="#">ENG</a>
+                <a href="#" class="hide">LOG IN</a>
+                <a href="#" class="hide">SING UP</a>
+                <a href="#" class="hide">ESP</a>
+                <a href="#" class="hide">ENG</a>
                 <button class="menu">
                     <img src="IMG/Menú.png" alt="menu">
                 </button>
@@ -63,8 +63,8 @@
     
     <!--Segunda sección-->
     <div class="container">
-        <div class="container_imgs_p2">
-            <div class="imgs_p2 active">
+        <div class="container_imgs_p2 hide">
+            <div class="imgs_p2 active ">
                 <img src="IMG/Parte2Img1.png" alt="Castillo">
                 <div class="prueba">
                     <p class="tipo1"></p>
@@ -74,14 +74,16 @@
             <div class="imgs_p2">
                 <img src="IMG/Parte2Img2.png" alt="Casa">
                 <div class="prueba">
-                    <p class="tipo1">England</p>
+                    <p class="tipo1">
+                    <img src="IMG/Castle.svg" alt="castillof" id="castillof">England</p>
                     <p class="tipo2">Glasgow</p>
                 </div>
             </div>
             <div class="imgs_p2">
                 <img src="IMG/Parte2Img3.png" alt="Mansión">
                 <div class="prueba">
-                    <p class="tipo1">France</p>                
+                    <p class="tipo1">
+                        <img src="IMG/Castle.svg" alt="castillof" id="castillof2">France</p>                
                     <p class="tipo2">Marseilles</p>
                 </div>
             </div>
@@ -125,25 +127,27 @@
             </button>
             </div>
         </div>  
-        <div class="container_imgs_p3">
+        <div class="container_imgs_p3 hide">
             <div class="imgs_p3">
                 <img src="IMG/Parte3Img1.png" alt="Castillo">
                 <div class="prueba">
-                    <p class="tipo3">France</p>
+                    <p class="tipo3">
+                        <img src="IMG/Castle.svg" alt="castillof" id="castillof3">France</p>
                     <p class="tipo4">Carcassone</p>
                 </div>
             </div>
             <div class="imgs_p3">
                 <img src="IMG/Parte3Img2.png" alt="Casa">
                 <div class="prueba">
-                    <p class="tipo3">Germany</p>
+                    <p class="tipo3">
+                        <img src="IMG/Castle.svg" alt="castillof" id="castillof4">Germany</p>
                     <p class="tipo4">Munich</p>
                 </div>
             </div>
             <div class="imgs_p3 active">
                 <img src="IMG/Parte3Img3.png" alt="Mansión">
                 <div class="prueba">
-                    <p class="tipo3">Fran</p>                
+                    <p class="tipo3"><img src="IMG/Castle.svg" alt="castillof" id="castillof5">Fran</p>                
                     <p class="tipo4">Clo</p>
                 </div>
             </div>
@@ -153,12 +157,37 @@
 
     <!--Cuarta sección-->
     <div class="text4">
-        <br>
-        <br>
+        <br class="hide">
+        <br class="hide">
         <span class="gallery">Luxury properties</span>
-        <h2 class="titulo2">Developments</h2>
+        <h2 class="titulo2">Developments
+            <div class="imgs_mobiles">
+                <div class="imgs_mobile">
+                    <img src="IMG/MobileParte4Img1.png" alt="Sala">
+                    <div class="prueba3">
+                        <p class="tipo1">Canada</p>
+                        <p class="tipo2">Quebec</p>
+                    </div>
+                </div>
+                <div class="imgs_mobile">
+                    <img src="IMG/MobileParte4Img2.png" alt="Sala">
+                    <div class="prueba3">
+                        <p class="tipo1">México</p>
+                        <p class="tipo2">Tulum</p>
+                    </div>
+                </div>
+                <div class="imgs_mobile">
+                    <img src="IMG/MobileParte4Img3.png" alt="Sala">
+                    <div class="prueba3">
+                        <p class="tipo1">Canada</p>
+                        <p class="tipo2">Quebec</p>
+                    </div>
+                </div>
+            </div>
+        </h2>
+        
     </div>
-    <div class="container_imgs_p4f1">
+    <div class="container_imgs_p4f1 hide">
         <div class="imgs_p4f1">
             <img src="IMG/Parte4Img11.png" alt="Castillo">
             <div class="prueba2">
@@ -188,7 +217,7 @@
             </div>
         </div>
     </div>
-    <div class="container_imgs_p4f2">
+    <div class="container_imgs_p4f2 hide">
         <div class="imgs_p4f1">
             <img src="IMG/Parte4Img21.png" alt="Castillo">
             <div class="prueba2">
@@ -216,7 +245,6 @@
                 <p class="tipo1">Urbin</p>
                 <p class="tipo2">Coconut Grove</p>
             </div>
-            
         </div>
     </div>
     
@@ -231,7 +259,7 @@
         </div>
         
         <div class="container_text_p5">
-            <img src="IMG/Parte5Img2.png" alt="Grupo" class="imgs_p5c2">
+            <img src="IMG/Parte5Img2.png" alt="Grupo" class="imgs_p5c2 hide">
             <div class="text">
                 <span class="gallery">Services</span>
                 <h2 class="titulo2">Art Curation &
@@ -239,13 +267,13 @@
                 <p class="parrafos">In an ultimate jetsetter location or a forever home, our experts have the expertise it takes to knowledgeably advise you at every stage of the property cycle.</p>
             </div>
             <div class="botones">
-            <button class="pag prev">
-                <img src="IMG/left_arrow.png" alt="flecha izquierda">
+            <button class="pag prev hide">
+                <img src="IMG/left_arrow.png" alt="flecha izquierda" class="hide" >
                 PREV
             </button>
-            <button class="bot_primario">Contac us</button>
-            <button class="pag next">NEXT
-                <img src="IMG/righ_arrow.png" alt="flecha derecha">
+            <button class="bot_primario hide">Contac us</button>
+            <button class="pag next hide">NEXT
+                <img src="IMG/righ_arrow.png" alt="flecha derecha" class="hide">
             </button>
             </div>
         </div>  
@@ -261,34 +289,34 @@
                 <h2 class="titulo2_2">Unlock</h2>
                 <h2 class="titulo2_2">the exclusive world</h2>
             </div>
-            <div class="text7">
-                <span class="name2">Name:</span>
+            <div class="text7 hide">
+                <span class="name2 hide">Name:</span>
                 <br>
-                <input type="text_2" value="Ex. name@mail.com" class="input">
+                <input type="text_2 hide" value="Ex. name@mail.com" class="input">
                 <br>
-                <button class="bot_primario_2">Submit</button>
+                <button class="bot_primario_2 hide">Submit</button>
             </div>
         </div>
         <div class="contenedor_bottom">
             <div class="datos">
                 <div>
-                    <img src="IMG/Logo.png" alt="Logo">
+                    <img src="IMG/Logo.png" alt="Logo" class="hide">
                 </div>
-                <div class="tipo5 centrado" >Suites</div>
-                <div class="tipo8 centrado">Houses</div>
-                <div class="tipo7 izquierda">Call Center</div>
+                <div class="tipo5 centrado hide" >Suites</div>
+                <div class="tipo8 centrado hide">Houses</div>
+                <div class="tipo7 izquierda hide">Call Center</div>
                 <div></div>
-                <div class="tipo5 centrado">Cities</div>
-                <div class="tipo5 centrado">Apartments</div>
-                <div class="tipo6 izquierda">+52 55 6840 4000</div>
-                <div class="tipo5">Become a New Uniq Artist</div>
-                <div class="tipo5 centrado">Villas</div>
+                <div class="tipo5 centrado hide">Cities</div>
+                <div class="tipo5 centrado hide">Apartments</div>
+                <div class="tipo6 izquierda hide">+52 55 6840 4000</div>
+                <div class="tipo5 hide">Become a New Uniq Artist</div>
+                <div class="tipo5 centrado hide">Villas</div>
                 <div></div>
                 <div></div>
-                <div class="tipo5">Become a Commercial Partner</div>
+                <div class="tipo5 hide">Become a Commercial Partner</div>
                 <div></div>
-                <div class="tipo5 centrado">Contact us</div>
-                <div class="tipo5 izquierda">concierge@uniqluxury.com</div>
+                <div class="tipo5 centrado hide">Contact us</div>
+                <div class="tipo5 izquierda hide">concierge@uniqluxury.com</div>
                 </div>          
             </div>
         </div>
