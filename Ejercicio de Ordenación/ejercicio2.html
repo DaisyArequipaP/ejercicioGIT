@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang=”en”>
+
+<head>
+    <meta charset=”UTF-8″ />
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        var array = ['unacadena', 3, 9, 1, 10, 500, 1, 10, true];
+        var array2 = array.filter(item => typeof item === 'number');
+        for (var i = 0; i < array2.length - 1; i++) {
+            for (var j = 0; j < array2.length - 1 - i; j++) {
+                if (array2[j] < array2[j + 1]) {
+                    var temp = array2[j];
+                    array2[j] = array2[j + 1];
+                    array2[j + 1] = temp;
+                }
+            }
+        }
+
+        console.log("Array ordenado de mayor a menor:", array2);
+    </script>
+
+</body>
+
+</html>
