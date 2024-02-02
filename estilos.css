@@ -33,13 +33,15 @@
 .cancion{
     font-size: 20px;
     margin-bottom: 3%;
-    width: 70%;
+    width: 100%;
     
 }
 .buttoms_res{
     background-color: violet;
-    width: 30%;
+    width: auto;
+    margin-right: 50%;
 }
+
 .canciones_botones{
     display: flex;
 }
