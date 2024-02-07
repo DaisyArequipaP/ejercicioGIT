@@ -11,7 +11,7 @@
 <body>
     <section class="search">
         <div class="buscador">
-            <input type="text" class="barra_search">
+            <input type="text" class="barra_search" id="input">
             <button id="buttom_search"> Buscar
                 <i class="fa-solid fa-magnifying-glass"> </i>
             </button>
@@ -22,32 +22,34 @@
             <section class="canciones">
                 <div class="resultados">
                     <h2> Mis resultados</h2>
-                    <li class="cancion">Cancion 1
-                        <button class="fa-solid fa-play" id="play-btn"></button>
-                        <button class="fa-solid fa-heart" id="fav-btn"></button>
-                        <button class="fa-regular fa-heart" id="favsel-btn"></button>
-                        <button class="fa-solid fa-plus" id="add-btn"></button>
-
-                    </li>
-                    <li class="cancion">Cancion 2
-                        <button class="fa-solid fa-play" id="play-btn"></button>
-                        <button class="fa-solid fa-heart" id="fav-btn"></button>
-                        <button class="fa-regular fa-heart" id="favsel-btn"></button>
-                        <button class="fa-solid fa-plus" id="add-btn"></button>
-                    </li>
-                    <li class="cancion">Cancion 3
-                        <button class="fa-solid fa-play" id="play-btn"></button>
-                        <button class="fa-solid fa-heart" id="fav-btn"></button>
-                        <button class="fa-regular fa-heart" id="favsel-btn"></button>
-                        <button class="fa-solid fa-plus" id="add-btn"></button>
-                    </li>
+                    <ul id="lista">
+                        <li class="cancion result" >Cancion 1
+                            <button class="fa-solid fa-play" id="play-btn"></button>
+                            <button class="fa-solid fa-heart" id="fav-btn"></button>
+                            <button class="fa-regular fa-heart" id="favsel-btn"></button>
+                            <button class="fa-solid fa-plus" id="add-btn"></button>
+    
+                        </li>
+                        <li class="cancion result">Cancion 2
+                            <button class="fa-solid fa-play" id="play-btn"></button>
+                            <button class="fa-solid fa-heart" id="fav-btn"></button>
+                            <button class="fa-regular fa-heart" id="favsel-btn"></button>
+                            <button class="fa-solid fa-plus" id="add-btn"></button>
+                        </li>
+                        <li class="cancion result">Cancion 3
+                            <button class="fa-solid fa-play" id="play-btn"></button>
+                            <button class="fa-solid fa-heart" id="fav-btn"></button>
+                            <button class="fa-regular fa-heart" id="favsel-btn"></button>
+                            <button class="fa-solid fa-plus" id="add-btn"></button>
+                        </li>
+                    </ul>
                 </div>
 
             </section>
             <section class="myplaylist">
                 <div class="resultados">
                     <h2> My Playlist</h2>
-                    <li class="cancion">Cancion 1
+                    <li class="cancion myplaylist">Cancion 1
                         <button class="fa-solid fa-play" id="play-btn"></button>
                         <button class="fa-solid fa-heart" id="fav-btn"></button>
                         <button class="fa-regular fa-heart" id="favsel-btn"></button>
@@ -55,14 +57,14 @@
 
 
                     </li>
-                    <li class="cancion">Cancion 2
+                    <li class="cancion myplaylist">Cancion 2
                         <button class="fa-solid fa-play" id="play-btn"></button>
                         <button class="fa-solid fa-heart" id="fav-btn"></button>
                         <button class="fa-regular fa-heart" id="favsel-btn"></button>
                         <button class="fa-solid fa-trash" id="trash-btn"></button>
 
                     </li>
-                    <li class="cancion">Cancion 3
+                    <li class="cancion myplaylist">Cancion 3
                         <button class="fa-solid fa-play" id="play-btn"></button>
                         <button class="fa-solid fa-heart" id="fav-btn"></button>
                         <button class="fa-regular fa-heart" id="favsel-btn"></button>
@@ -74,7 +76,7 @@
             <section class="favoritos">
                 <div class="resultados">
                     <h2> Mis Favoritos</h2>
-                    <li class="cancion">Cancion 1
+                    <li class="cancion favoritos">Cancion 1
                         <button class="fa-solid fa-play" id="play-btn"></button>
                         <button class="fa-solid fa-heart" id="fav-btn"></button>
                         <button class="fa-regular fa-heart" id="favsel-btn"></button>
@@ -82,14 +84,14 @@
 
 
                     </li>
-                    <li class="cancion">Cancion 2
+                    <li class="cancion favoritos">Cancion 2
                         <button class="fa-solid fa-play" id="play-btn"></button>
                         <button class="fa-solid fa-heart" id="fav-btn"></button>
                         <button class="fa-regular fa-heart" id="favsel-btn"></button>
                         <button class="fa-solid fa-plus" id="add-btn"></button>
 
                     </li>
-                    <li class="cancion">Cancion 3
+                    <li class="cancion favoritos">Cancion 3
                         <button class="fa-solid fa-play" id="play-btn"></button>
                         <button class="fa-solid fa-heart" id="fav-btn"></button>
                         <button class="fa-regular fa-heart" id="favsel-btn"></button>
