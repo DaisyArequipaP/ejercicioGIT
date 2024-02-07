@@ -48,8 +48,10 @@ boton.addEventListener('click', function () {
   }
 })
 
-/*
-class Song {
+
+class Reproductor {
+    catalogodecanciones;
+    currentSong;
     constructor (nombre, artista, año, duracion, genero){
         this.catalogodecanciones = [
             new Song(nombre:"cancion 1",artista: "artista 1", año: "año 1",duracion: "duracion 1", genero: "genero 1"),
@@ -82,6 +84,9 @@ class Song {
             new Song(nombre:"cancion 28",artista: "artista 28", año: "año 28",duracion: "duracion 28", genero: "genero 28"),
             new Song(nombre:"cancion 29",artista: "artista 29", año: "año 29",duracion: "duracion 29", genero: "genero 29"),
             new Song(nombre:"cancion 30",artista: "artista 30", año: "año 30",duracion: "duracion 30", genero: "genero 30"),    
-        ]
+        ];
+        this.catalogodecanciones();
+        this this.currentSong = this.catalogodecanciones[0];
+
     }
-}*/
+}
