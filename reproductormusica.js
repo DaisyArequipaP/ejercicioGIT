@@ -47,9 +47,44 @@ boton.addEventListener('click', function () {
     lista.innerHTML = '<li>No se encontraron canciones</li>'
   }
 })
+/*Clase Canciones para saber los detalles de cada cancion*/
+class Song{
+    constructor(nombre, autor, duracion, anio, genero, letra, cover, urlSong){
+        this.nombre = nombre;
+        this.autor = autor;
+        this.duracion = duracion;
+        this.anio = anio;
+        this.genero = genero;
+        this.letra = letra;
+        this.cover = cover;
+        this.urlSong = urlSong;
+    }
 
 
+}
+/*Clase Playlist para saber los detalles de cada cancion*/
+class Playlist{
+    constructor(nombre, listaCanciones, ordenEscucha){
+        this.nombre = nombre;
+        this.listaCanciones = listaCanciones;
+        this.ordenEscucha = ordenEscucha;
+    }
+}
+/*Clase Reproductor para saber los detalles de cada cancion*/
 class Reproductor {
+    catalogodeCancione;
+    currentSong;
+    currentPlaylist;
+    constructor(){
+        this.catalogodeCancione = [
+            new Song(nombre:)
+        ]
+    }
+}
+
+
+
+/*class Reproductor {
     catalogodecanciones;
     currentSong;
     constructor (nombre, artista, año, duracion, genero){
@@ -89,4 +124,4 @@ class Reproductor {
         this this.currentSong = this.catalogodecanciones[0];
 
     }
-}
+}*/
