@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang=”en”>
+
+<head>
+    <meta charset=”UTF-8″ />
+    <title>Document</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script src="https://kit.fontawesome.com/b408879b64.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <section class="search">
+        <div class="buscador">
+            <input type="text" class="barra_search" id="input">
+            <button id="buttom_search"> Buscar
+                <i class="fa-solid fa-magnifying-glass"> </i>
+            </button>
+        </div>
+    </section>
+    <div class="contenedor">
+        <div class="contenedor1">
+            <section class="canciones">
+                <div class="resultados">
+                    <h2> Mis resultados</h2>
+                    <ul id="lista">
+                        <li class="cancion result" >Cancion 1
+                            <button class="fa-solid fa-play" id="play-btn"></button>
+                            <button class="fa-solid fa-heart" id="fav-btn"></button>
+                            <button class="fa-regular fa-heart" id="favsel-btn"></button>
+                            <button class="fa-solid fa-plus" id="add-btn"></button>
+    
+                        </li>
+                        <li class="cancion result">Cancion 2
+                            <button class="fa-solid fa-play" id="play-btn"></button>
+                            <button class="fa-solid fa-heart" id="fav-btn"></button>
+                            <button class="fa-regular fa-heart" id="favsel-btn"></button>
+                            <button class="fa-solid fa-plus" id="add-btn"></button>
+                        </li>
+                        <li class="cancion result">Cancion 3
+                            <button class="fa-solid fa-play" id="play-btn"></button>
+                            <button class="fa-solid fa-heart" id="fav-btn"></button>
+                            <button class="fa-regular fa-heart" id="favsel-btn"></button>
+                            <button class="fa-solid fa-plus" id="add-btn"></button>
+                        </li>
+                    </ul>
+                </div>
+
+            </section>
+            <section class="myplaylist">
+                <div class="resultados">
+                    <h2> My Playlist</h2>
+                    <li class="cancion myplaylist">Cancion 1
+                        <button class="fa-solid fa-play" id="play-btn"></button>
+                        <button class="fa-solid fa-heart" id="fav-btn"></button>
+                        <button class="fa-regular fa-heart" id="favsel-btn"></button>
+                        <button class="fa-solid fa-trash" id="trash-btn"></button>
+
+
+                    </li>
+                    <li class="cancion myplaylist">Cancion 2
+                        <button class="fa-solid fa-play" id="play-btn"></button>
+                        <button class="fa-solid fa-heart" id="fav-btn"></button>
+                        <button class="fa-regular fa-heart" id="favsel-btn"></button>
+                        <button class="fa-solid fa-trash" id="trash-btn"></button>
+
+                    </li>
+                    <li class="cancion myplaylist">Cancion 3
+                        <button class="fa-solid fa-play" id="play-btn"></button>
+                        <button class="fa-solid fa-heart" id="fav-btn"></button>
+                        <button class="fa-regular fa-heart" id="favsel-btn"></button>
+                        <button class="fa-solid fa-trash" id="trash-btn"></button>
+
+                    </li>
+                </div>
+            </section>
+            <section class="favoritos">
+                <div class="resultados">
+                    <h2> Mis Favoritos</h2>
+                    <li class="cancion favoritos">Cancion 1
+                        <button class="fa-solid fa-play" id="play-btn"></button>
+                        <button class="fa-solid fa-heart" id="fav-btn"></button>
+                        <button class="fa-regular fa-heart" id="favsel-btn"></button>
+                        <button class="fa-solid fa-plus" id="add-btn"></button>
+
+
+                    </li>
+                    <li class="cancion favoritos">Cancion 2
+                        <button class="fa-solid fa-play" id="play-btn"></button>
+                        <button class="fa-solid fa-heart" id="fav-btn"></button>
+                        <button class="fa-regular fa-heart" id="favsel-btn"></button>
+                        <button class="fa-solid fa-plus" id="add-btn"></button>
+
+                    </li>
+                    <li class="cancion favoritos">Cancion 3
+                        <button class="fa-solid fa-play" id="play-btn"></button>
+                        <button class="fa-solid fa-heart" id="fav-btn"></button>
+                        <button class="fa-regular fa-heart" id="favsel-btn"></button>
+                        <button class="fa-solid fa-plus" id="add-btn"></button>
+
+                    </li>
+                </div>
+            </section>
+
+        </div>
+        <div class="contenedor2">
+            <div class="portada">
+                Portada
+            </div>
+            <div class="info">
+                Nombre:
+                <br>
+                Artista:
+                <br>
+                Año:
+                <br>
+                Duración:
+                <br>
+                Género:
+            </div>
+            <div class="botones_reproduccion">
+                <div class="fa-solid fa-backward" id="antes-btn"></div>
+                <div class="fa-solid fa-play" id="play-btn"></div>
+                <div class="fa-solid fa-forward" id="adel-btn"></div>
+                <div class="fa-solid fa-stop" id="stop-btn"></div>
+                <div class="fa-solid fa-volume-high" id="loud-btn"></div>
+                <div class="fa-solid fa-volume-xmark" id="mute-btn"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="reproductormusica.js" async></script>
+
+</body>
+
+</html>
