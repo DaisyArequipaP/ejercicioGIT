@@ -180,6 +180,8 @@ playlist.songs.forEach(song => {
 
     });
 
+    
+
     // 2. BOTÓN DE FAVORITO (CORAZÓN) y su comportamiento en MIS FAVORITOS
     // Obtener referencia al contenedor "myplaylist"
     const myPlaylistContainer = document.querySelector('#myplaylist');
@@ -253,12 +255,12 @@ playlist.songs.forEach(song => {
                 // Actualizar el estado de la canción agregada a favoritos
                 isSongAddedToFavorites = false;
             });
-
+            // Agregar el elemento clonado al contenedor "favoritos"
+            favoritosContainer.appendChild(clonedSong);
             // Agregar el botón de eliminar a la copia
             clonedSong.appendChild(trashBtn);
 
-            // Agregar el elemento clonado al contenedor "favoritos"
-            favoritosContainer.appendChild(clonedSong);
+            
 
             // Actualizar el estado de la canción agregada a favoritos
             isSongAddedToFavorites = true;
@@ -276,14 +278,12 @@ playlist.songs.forEach(song => {
     resultadosContainer.appendChild(songElement);
 });
 
+
+
 // Crear una instancia de Reproduccion con la playlist
 const reproductor = new Reproduccion(playlist);
 
-
-
-
-
-// Obtener referencia al botón de búsqueda
+// Obtener referencia al botón de búsqueda//
 const boton = document.getElementById('buttom_search');
 
 // Agregar evento click al botón de búsqueda
@@ -366,7 +366,7 @@ function playCurrentSong() {
     audio.src = song.urlSong; // Establecer la URL de la canción en el elemento de audio
     imagechange.src = song.cover; // Cambiar la imagen de la portada
     audio.play(); // Reproducir la canción
-    const songDetails = document.querySelector('.song-details');
+    const songDetails = document.querySelector('.info');
     const detailsHTML = `
         <p>Nombre: ${song.nombre}</p>
         <p>Artista: ${song.artista}</p>
@@ -447,7 +447,7 @@ function prevMusic() {
 prevBtn.addEventListener("click", prevMusic);
 /* funcion para mostrar datos de la cancion actual/*/
 
-const songDetails = document.querySelector('.song-details');
+const songDetails = document.querySelector('.info');
 
 // Función para mostrar los detalles de la canción actual
 function showSongDetails() {
@@ -490,3 +490,4 @@ playBtn.addEventListener('click', function () {
 window.addEventListener('load', function() {
     loadMusic(0); // Cargar la primera canción al cargar la página
 });
+

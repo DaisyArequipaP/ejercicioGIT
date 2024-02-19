@@ -86,7 +86,7 @@ h2{
     align-items: center;    
 }
 
-.song-details{
+.info{
     margin-top: -1.5%;
     height: 22%;
     background-color: rgb(43, 226, 153);
@@ -97,7 +97,7 @@ h2{
     align-items: center;
 }
 
-.song-details p{
+.info p{
     margin-bottom: -0.9%;
     font-size: 15px;
 }
